@@ -1,6 +1,6 @@
 = My Sinatra Template
 
-This is a Sinatra template with Bundler, Rack config, MongoMapper, RSpec/RCov and some useful Rake jobs.
+This is my Sinatra template with Bundler, Rack config, MongoMapper, RSpec/RCov and some useful Rake tasks.
 
 == Note on Patches/Pull Requests
  

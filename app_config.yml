@@ -1,0 +1,6 @@
+test:
+    mongo_url: mongodb://localhost/app_test
+development:
+    mongo_url: mongodb://localhost/app_development
+production:
+    mongo_url: mongodb://localhost/app_production

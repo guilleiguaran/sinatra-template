@@ -1,8 +1,4 @@
-require 'yaml'
-
 ENV['RACK_ENV'] = "test"
-AppConfig = YAML.load_file(File.join(Dir.pwd, 'app_config.yml'))[ENV['RACK_ENV']]
-ENV["MONGOHQ_URL"] |= AppConfig['mongo_url']
 
 require 'rubygems'
 require 'bundler'
@@ -10,9 +6,7 @@ require 'bundler'
 Bundler.require(:default, :test)
 
 require File.join(File.dirname(__FILE__), '..', 'application')
-require 'spec'
-require 'spec/autorun'
-require 'spec/interop/test'
+require 'rspec'
 
 set :environment, :test
 set :run, false
@@ -30,11 +24,11 @@ class SessionData
       @data = {}
     end
   end
-  
+
   def [](key)
     @data[key]
   end
-  
+
   def []=(key, value)
     @data[key] = value
     session_data = Marshal.dump(@data)

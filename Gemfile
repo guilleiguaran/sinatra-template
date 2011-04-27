@@ -1,15 +1,16 @@
 source :rubygems
 
 gem "sinatra"
-gem "mongo"
-gem "bson"
-gem "bson_ext"
-gem "mongo_mapper"
-gem "i18n"
+gem "haml"
+gem 'mongoid', '>= 2.0.0.rc.7'
+gem 'bson_ext'
+gem 'bcrypt-ruby', :require => 'bcrypt'
+
 
 group :test do
   gem "rake"
   gem "rack-test", :require => "rack/test"
-  gem "rspec", '1.3.1', :require => nil
-  gem "rcov"
+  gem "rspec"
+  gem "capybara"
+  gem "simplecov"
 end

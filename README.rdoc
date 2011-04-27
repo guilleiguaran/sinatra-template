@@ -1,13 +1,13 @@
 = My Sinatra Template
 
-This is my Sinatra template with Bundler, Rack config, MongoMapper, RSpec/RCov and some useful Rake tasks.
+This is my Sinatra template with Bundler, Rack config, Mongoid, RSpec, SimpleCov and some useful Rake tasks.
 
 == Note on Patches/Pull Requests
- 
+
 * Fork the project.
 * Make your feature addition or bug fix.
 * Send me a pull request. Bonus points for topic branches.
 
 == Copyright
 
-Copyright (c) 2010 Guillermo Iguaran. See LICENSE for details.
+Copyright (c) 2010-2011 Guillermo Iguaran. See LICENSE for details.

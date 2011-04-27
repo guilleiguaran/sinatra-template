@@ -5,6 +5,8 @@ require 'bundler'
 
 Bundler.require(:default, :test)
 
+require 'simplecov'
+SimpleCov.start
 require File.join(File.dirname(__FILE__), '..', 'application')
 require 'rspec'
 
